@@ -1,0 +1,21 @@
+{
+  "name": "nodejs-starter-pack",
+  "version": "1.0.0",
+  "description": "nodejs starter agar project lebih cepat",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "dhevanthareza",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.4",
+    "express": "^4.17.1",
+    "express-flash": "0.0.2",
+    "express-session": "^1.16.2",
+    "express-validator": "^6.1.1",
+    "moment": "^2.24.0",
+    "passport": "^0.4.0"
+  }
+}
