@@ -1,13 +1,20 @@
 const express = require('express');
+const compression = require('compression');
 const session = require('express-session');
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
+const logger = require('morgan');
+const chalk = require('chalk');
+const errorHandler = require('errorhandler');
+const lusca = require('lusca');
 const flash = require('express-flash');
 const path = require('path');
 const passport = require('passport');
 const expressValidator = require('express-validator');
+const expressStatusMonitor = require('express-status-monitor');
 const fs = require('fs');
 const moment = require('moment');
+const chokidar = require('chokidar');
 
 require('dotenv').config();
 require('moment/locale/id');
