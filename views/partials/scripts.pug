@@ -1,0 +1,17 @@
+// CoreUI and necessary plugins
+script(src='/js/lib/jquery.min.js')
+script(src='/js/lib/popper.min.js')
+script(src='/js/lib/bootstrap.min.js')
+script(src='/js/lib/pace.min.js')
+script(src='/js/lib/perfect-scrollbar.min.js')
+script(src='/js/lib/coreui.min.js')
+script(src='/js/lib/select2.min.js')
+script(src='/js/jquery-ui.js')
+block scripts
+
+if ajax
+  script.
+    $('#ui-view').ajaxLoad();
+    $(document).ajaxComplete(function() {
+      Pace.restart()
+    });

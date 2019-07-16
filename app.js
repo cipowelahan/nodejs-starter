@@ -10,7 +10,6 @@ const lusca = require('lusca');
 const flash = require('express-flash');
 const path = require('path');
 const passport = require('passport');
-const expressValidator = require('express-validator');
 const expressStatusMonitor = require('express-status-monitor');
 const fs = require('fs');
 const moment = require('moment');
@@ -48,7 +47,6 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
-app.use(expressValidator());
 app.use(session({
   resave: true,
   saveUninitialized: true,
